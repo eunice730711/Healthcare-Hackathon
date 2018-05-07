@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home-Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+</head>
+
+<body>
+    <div class="bgm">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="wrapper">
+                            <form class="form-signin" action="/registerInput/" method="POST" enctype="multipart/form-data"> {% csrf_token %}
+                                <h2 class="form-signin-heading">Please Register</h2>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="info" id="basic-info">
+                                                <h5>Basic Infomation</h4>
+                                                    <input type="text" class="form-control" name="userId" placeholder="Your ID" required="" autofocus="" />
+                                                    <input type="password" class="form-control" name="password" placeholder="Your Password" required="" />
+                                                    <input type="text" class="form-control" name="age" placeholder="Your Age" required="" />
+                                                    <input type="text" class="form-control" name="gender" placeholder="Your Gender" required="" />
+                                                    <input type="text" class="form-control" name="height" placeholder="Your Height" required="" />
+                                                    <input type="text" class="form-control" name="weight" placeholder="Your Weight" required="" />
+                                                    <input type="text" class="form-control" name="race" placeholder="Your Race" required="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="info" id="disease-info">
+                                                <h5>Disease Infomation</h4>
+                                                    <label class="radio-inline">Diabetes
+                                                        <input type="radio" name="diabetes" value="1" required="">Yes
+                                                        <input type="radio" name="diabetes" value="0" required="">No
+                                                    </label>
+                                                    <label class="radio-inline">Hypertension
+                                                        <input type="radio" name="hypertension" value="1" required="">Yes
+                                                        <input type="radio" name="hypertension" value="0" required="">No
+                                                    </label>
+                                                    <label class="radio-inline">Cancer
+                                                        <input type="radio" name="cancer" value="1" required="">Yes
+                                                        <input type="radio" name="cancer" value="0" required="">No
+                                                    </label>
+                                                    <label class="radio-inline">Chronic Athens
+                                                        <input type="radio" name="chronicAthens" value="1" required="">Yes
+                                                        <input type="radio" name="chronicAthens" value="0" required="">No
+                                                    </label>
+                                                    <label class="radio-inline">Heart Disease
+                                                        <input type="radio" name="heartDisease" value="1" required="">Yes
+                                                        <input type="radio" name="heartDisease" value="0" required="">No
+                                                    </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="button-container">
+                                    <button class="btn btn-md btn-info mt-4" type="submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

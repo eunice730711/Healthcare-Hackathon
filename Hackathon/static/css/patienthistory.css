@@ -1,0 +1,9 @@
+@import url("./public-general.css");
+#chartdiv {
+    /* background-color: rgba(34, 34, 34, 0.7); */
+    background-color: #012B39;
+    width: 80%;
+    height: 450px;
+    margin: 0 auto;
+    margin-top: 30px;
+}

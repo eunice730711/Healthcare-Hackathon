@@ -1,0 +1,103 @@
+@import url("./public-general.css");
+/* .bgm {
+    background-image: url("../images/wellness2.jpg");
+    background-size: cover;
+    width: 100%;
+} */
+
+.wrapper {
+    margin-top: 50px;
+}
+
+.radio-inline {
+    margin-left: 20px;
+}
+
+.form-input {
+    max-width: 380px;
+    padding: 15px 30px 30px;
+    margin: 0 auto;
+    background-color: rgba(250, 255, 250, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.result {
+    padding: 30px 30px 30px 30px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.result p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+. .form-signin .form-signin-heading {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    position: relative;
+    font-size: 14px;
+    height: auto;
+    padding: 5px;
+    @include box-sizing(border-box);
+    &:focus {
+        z-index: 2;
+    }
+}
+
+.categoryWapper {
+    width: 300px;
+    overflow: hidden;
+}
+
+.q-title {
+    font-size: 18px;
+}
+
+.btn-margin {
+    margin-top: 20px;
+}
+
+/* table */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+.table-container {
+    margin-top: 30px;
+}
+
+table {
+    background: #012B39;
+    border-radius: 0.25em;
+    border-collapse: collapse;
+    margin: 10px;
+    text-align: center;
+}
+
+th {
+    border-bottom: 1px solid #364043;
+    color: #E2B842;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0.5em 1em;
+}
+
+td {
+    color: #fff;
+    font-weight: 400;
+    padding: 0.65em 1em;
+    width: 150px;
+}
+
+tbody tr {
+    transition: background 0.25s ease;
+}
+
+tbody tr:hover {
+    background: #014055;
+}
+
+/* table */

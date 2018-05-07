@@ -1,0 +1,36 @@
+@import url("./public-general.css");
+/* [class^="col"] {
+    border: 1px solid;
+} */
+
+body {
+    background-image: url("../images/glenn-carstens-peters-190592-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.search {
+    margin-top: 50px;
+}
+
+.btn-container,
+.card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.search button {
+    width: 150px;
+}
+
+.result {
+    margin-top: 80px;
+}
+
+.card-text {
+    font-size: 60px;
+    color: #fa8072;
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,103 @@
+/* [class^="col"] {
+    border: 1px solid;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bgm {
+    background-image: url("../images/rawpixel-com-603649-unsplash.jpg");
+    background-size: cover;
+    width: 100%;
+    /* position: relative; */
+}
+
+.wrapper {
+    margin-top: 20px;
+}
+
+.form-signin {
+    max-width: 600px;
+    padding: 10px 30px 30px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    /* margin-bottom: 30px; */
+}
+
+.form-control {
+    position: relative;
+    font-size: 14px;
+    height: auto;
+    padding: 8px;
+    width: 250px;
+    @include box-sizing(border-box);
+    &:focus {
+        z-index: 2;
+    }
+}
+
+input {
+    margin-bottom: 8px;
+}
+
+input[type="text"] {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+input[type="password"] {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+input[type="radio"] {
+    margin-left: 5px;
+}
+
+.info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    margin-top: 20px;
+}
+
+#disease-info .radio-inline {
+    padding: 10px 0 10px 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    width: 30%;
+    margin: 0 5px 0 5px;
+}
+
+@media screen and (min-width:1000px) {
+    .bgm {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .form-control {
+        width: 400px;
+    }
+    .info {
+        margin-top: 0px;
+    }
+}
